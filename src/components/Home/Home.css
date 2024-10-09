@@ -1,0 +1,68 @@
+/* Home.css */
+
+.home-container {
+    background: linear-gradient(120deg, #ff7e5f, #feb47b);
+    /* Gradient background */
+    border-radius: 10px;
+    /* Rounded corners */
+    padding: 50px;
+    /* Padding for spacing */
+    margin: 20px auto;
+    /* Center the container with margin */
+    max-width: 800px;
+    /* Maximum width for better readability */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    /* Subtle shadow */
+    color: #fff;
+    /* White text for contrast */
+    text-align: center;
+    /* Center text */
+    animation: slideIn 0.5s ease;
+    /* Animation for slide-in effect */
+}
+
+.home-title {
+    font-size: 2.5rem;
+    /* Larger title size */
+    margin-bottom: 20px;
+    /* Space below title */
+}
+
+.home-description {
+    font-size: 1.2rem;
+    /* Font size for description */
+    line-height: 1.6;
+    /* Improved readability */
+}
+
+
+/* Keyframe for slide-in animation */
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        /* Start invisible */
+        transform: translateY(20px);
+        /* Start slightly lower */
+    }
+    to {
+        opacity: 1;
+        /* Fully visible */
+        transform: translateY(0);
+        /* Back to original position */
+    }
+}
+
+
+/* Responsive styles */
+
+@media (max-width: 768px) {
+    .home-title {
+        font-size: 2rem;
+        /* Smaller title size on mobile */
+    }
+    .home-description {
+        font-size: 1rem;
+        /* Smaller description font size */
+    }
+}
