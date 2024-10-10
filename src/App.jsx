@@ -7,6 +7,7 @@ import About from './components/About/About';
 import Skills from './components/Skills/Skills';
 import Projects from './components/Projects/Projects';
 import ContactUs from './components/ContactUs/ContactUs';
+import SocialNetworks from './components/SocialNetworks/SocialNetworks';
 // import { useTheme } from './ThemeContext';
 
 
@@ -25,6 +26,7 @@ const App = () => {
         <Link to="/skills">Skills</Link>
         <Link to="/projects">Projects</Link>
         <Link to="/contactUs">Contact Us</Link>
+        <Link to="/SocialNetworks">Social Networks</Link>
       </nav>
       <div className="content">
         <Routes>
@@ -33,6 +35,7 @@ const App = () => {
           <Route path="/skills" element={<Skills />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contactUs" element={<ContactUs />} />
+          <Route path="/socialNetworks" element={<SocialNetworks />} />
         </Routes>
       </div>
     </Router>

@@ -1,56 +1,71 @@
 /* Projects.css */
 
 .projects-container {
-    background: linear-gradient(135deg, #ff758c, #ff7eb3);
-    /* Gradient background */
-    border-radius: 10px;
-    /* Rounded corners */
     padding: 40px;
-    /* Padding for spacing */
-    margin: 20px auto;
-    /* Center the container with margin */
-    max-width: 800px;
-    /* Maximum width for better readability */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-    /* Subtle shadow */
-    color: #fff;
-    /* White text for contrast */
+    background: linear-gradient(135deg, #6a82fb, #fc5c7d);
+    color: white;
     text-align: center;
-    /* Center text */
-    animation: fadeIn 0.5s ease;
-    /* Animation for fade-in effect */
 }
 
 .projects-title {
     font-size: 2.5rem;
-    /* Larger title size */
     margin-bottom: 20px;
-    /* Space below title */
 }
 
 .projects-description {
     font-size: 1.2rem;
-    /* Font size for description */
-    line-height: 1.6;
-    /* Improved readability */
+    margin-bottom: 30px;
 }
 
 
-/* Keyframe for fade-in animation */
+/* Change to flexbox with row direction */
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        /* Start invisible */
-        transform: translateY(20px);
-        /* Start slightly lower */
-    }
-    to {
-        opacity: 1;
-        /* Fully visible */
-        transform: translateY(0);
-        /* Back to original position */
-    }
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow wrapping of cards to the next line */
+    justify-content: center;
+    /* Center cards horizontally */
+}
+
+
+/* Updated to use flexbox for card layout */
+
+.project-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    /* Space around cards */
+    flex: 1 0 300px;
+    /* Flex-grow, flex-shrink, flex-basis for responsive sizing */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    height: 250px;
+    /* Fixed height for equal sizing */
+    display: flex;
+    /* Use flex to align content */
+    flex-direction: column;
+    /* Stack items vertically */
+    justify-content: space-between;
+    /* Distribute space evenly */
+}
+
+.project-title {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.project-duration {
+    font-weight: bold;
+    color: #feb47b;
+    /* Slightly contrasting color */
+}
+
+.project-description {
+    font-size: 1rem;
+    line-height: 1.5;
+    flex-grow: 1;
+    /* Allow description to grow and fill space */
 }
 
 
@@ -59,10 +74,15 @@
 @media (max-width: 768px) {
     .projects-title {
         font-size: 2rem;
-        /* Smaller title size on mobile */
     }
     .projects-description {
         font-size: 1rem;
-        /* Smaller description font size */
+    }
+    .project-card {
+        padding: 15px;
+        height: auto;
+        /* Allow height to adjust on smaller screens */
+        flex: 1 0 100%;
+        /* Full width for mobile */
     }
 }

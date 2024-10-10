@@ -1,0 +1,30 @@
+/* DiceBearAvatar.css */
+
+.avatar-container {
+    width: 100px;
+    /* Adjust based on your avatar size */
+    height: 100px;
+    /* Adjust based on your avatar size */
+    position: relative;
+    /* Allow positioning */
+}
+
+.walking-avatar {
+    animation: walk 5s linear infinite;
+    /* Animation for walking effect */
+}
+
+@keyframes walk {
+    0% {
+        transform: translateX(-100px);
+        /* Start position off-screen */
+    }
+    50% {
+        transform: translateX(calc(100vw - 150px));
+        /* Move to the right */
+    }
+    100% {
+        transform: translateX(-100px);
+        /* Reset back to the left */
+    }
+}
