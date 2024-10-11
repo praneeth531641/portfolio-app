@@ -1,7 +1,5 @@
-/* Skills.css */
-
 .skills-container {
-    background: linear-gradient(135deg, #84fab0, #8fd3f4);
+    background: linear-gradient(135deg, #6a82fb, #fc5c7d);
     /* Gradient background */
     border-radius: 10px;
     /* Rounded corners */
@@ -9,7 +7,7 @@
     /* Padding for spacing */
     margin: 20px auto;
     /* Center the container with margin */
-    max-width: 800px;
+    max-width: 600px;
     /* Maximum width for better readability */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     /* Subtle shadow */

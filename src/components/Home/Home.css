@@ -1,15 +1,13 @@
-/* Home.css */
-
 .home-container {
-    background: linear-gradient(120deg, #ff7e5f, #feb47b);
+    background: linear-gradient(135deg, #6a82fb, #fc5c7d);
     /* Gradient background */
     border-radius: 10px;
     /* Rounded corners */
-    padding: 50px;
+    padding: 40px;
     /* Padding for spacing */
     margin: 20px auto;
     /* Center the container with margin */
-    max-width: 800px;
+    max-width: 600px;
     /* Maximum width for better readability */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     /* Subtle shadow */
@@ -17,8 +15,8 @@
     /* White text for contrast */
     text-align: center;
     /* Center text */
-    animation: slideIn 0.5s ease;
-    /* Animation for slide-in effect */
+    animation: fadeIn 0.5s ease;
+    /* Animation for fade-in effect */
 }
 
 
